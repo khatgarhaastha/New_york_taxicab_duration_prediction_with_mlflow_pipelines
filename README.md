@@ -26,6 +26,26 @@ The notebook is organized into several key technical sections, each playing a cr
 5. **Prediction and Analysis**:
    - This section involves using the trained model to make predictions on new data.
 
+
+### **The machine learning algorithms used in the project to make predictions include:**
+
+1. **Linear Regression**:
+   - A fundamental statistical approach used to model the relationship between a dependent variable and one or more independent variables. It's used for prediction in cases where the relationship is linear.
+
+2. **Random Forest Regressor**:
+   - An ensemble learning method that operates by constructing multiple decision trees during training. It outputs the mean prediction of the individual trees for regression tasks.
+
+3. **Pipelines with GridSearchCV**:
+   - The notebook employs scikit-learn pipelines combined with GridSearchCV for hyperparameter tuning. This method systematically works through multiple combinations of parameter tunes, cross-validating as it goes to determine which tune gives the best performance.
+
+4. **PCA (Principal Component Analysis)**:
+   - PCA is used for dimensionality reduction in the preprocessing steps, reducing the feature space's dimensionality while retaining most of the data's variability.
+
+5. **Use of MLflow**:
+   - MLflow is used for managing the machine learning lifecycle, including experimentation, reproducibility, and deployment.
+
+These algorithms collectively represent a comprehensive approach to predictive modeling, covering a range of techniques from simple linear models to complex ensemble methods and dimensionality reduction techniques. The choice of algorithms indicates a balance between interpretability (like linear regression) and model performance (like Random Forest). The use of MLflow suggests an emphasis on experiment tracking and model management.
+
 ## Technologies and Tools
 - Python with data science libraries (Pandas, NumPy, Scikit-Learn, TensorFlow/Keras).
 - Jupyter Notebook for an interactive coding environment.
